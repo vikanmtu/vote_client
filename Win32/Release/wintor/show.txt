@@ -1,0 +1,1 @@
+Delete this file for hide Tor while application is run.

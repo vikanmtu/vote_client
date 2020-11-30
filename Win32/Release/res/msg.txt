@@ -1,0 +1,252 @@
+﻿0  : SUCCESS
+1  : ERC_INIT_RNG
+2  : ERC_INIT_PRVP
+3  : ERC_INIT_PUBP
+4  : ERC_INIT_WRITESEC
+5  : ERC_INIT_X
+6  : ERC_INIT_S
+7  : ERC_INIT_B
+8  : ERC_INIT_GETXX
+Пока нет QR-кода 
+Пока нет подключения 
+11 : ERC_INIT_LOAD_VPK 
+Пока не пройдена идентификация 
+13 : ERC_INIT_LOAD_RPK 
+Пока не пройдена регистрация 
+Пока не получен ID
+16 : ERC_INIT_LOAD_CNT 
+Пока не выбран голос 
+Вы пока не проголосовали 
+Ваш голос пока не открыт 
+QR-код пока не отсканирован 
+Ошибка подключения 
+22 : ERC_GETS_A_LEN 
+23 : ERC_GETS_A_NOSCAN 
+24 : ERC_GETS_A_CRC 
+25 : ERC_GETS_A_SAVES 
+26 : ERC_GETS_A_SAVEP 
+Пока нет подключения к серверу 
+28 : ERC_IDNT_R_HASH 
+29 : ERC_IDNT_R_BADQ 
+30 : ERC_IDNT_A_TYPE 
+31 : ERC_IDNT_A_LEN 
+32 : ERC_IDNT_A_SRV 
+33 : ERC_IDNT_A_NOGETS 
+34 : ERC_IDNT_A_CRC 
+35 : ERC_IDNT_A_HASH_RPK 
+36 : ERC_IDNT_A_POINT_SIG 
+37 : ERC_IDNT_A_VERIFY_RPK 
+38 : ERC_IDNT_A_SAVE_RPK 
+39 : ERC_IDNT_A_POINT_Q 
+40 : ERC_IDNT_A_GET_SS 
+41 : ERC_IDNT_A_SAVE_SS 
+Идентификация не пройдена 
+43 : ERC_REGS_R_HASH 
+44 : ERC_REGS_R_BLIND 
+45 : ERC_REGS_A_TYPE 
+46 : ERC_REGS_A_LEN 
+47 : ERC_REGS_A_NOIDNT 
+48 : ERC_REGS_A_ID 
+49 : ERC_REGS_A_CRC 
+50 : ERC_REGS_A_POINT_SIG 
+51 : ERC_REGS_A_POINT_RP1 
+52 : ERC_REGS_A_HASH_OURK 
+Ошибка! Кто-то уже зарегистрирован!
+54 : ERC_REGS_A_SAVE_BSIG 
+Регистрация не пройдена 
+56 : ERC_JOIN_R_JOINED 
+57 : ERC_JOIN_A_TYPE 
+58 : ERC_JOIN_A_LEN 
+59 : ERC_JOIN_A_NOREGS 
+60 : ERC_JOIN_A_JOINED 
+61 : ERC_JOIN_A_CRC 
+62 : ERC_JOIN_T_KEY 
+63 : ERC_JOIN_T_POINT 
+64 : ERC_JOIN_T_HASH 
+65 : ERC_JOIN_T_VERIFY 
+66 : ERC_JOIN_A_SAVE_ID 
+67 : ERC_JOIN_A_SAVE_TMR 
+Голос уже открыт 
+Ошибка выбора голоса 
+70 : ERC_VOTE_S_SAVE_TMR 
+71 : ERC_VOTE_S_SAVE_VOTD 
+Ошибка: нет ID 
+Ошибка: голос уже открыт 
+74 : ERC_VOTE_R_HASH_V 
+75 : ERC_VOTE_A_TYPE 
+76 : ERC_VOTE_A_LEN 
+77 : ERC_VOTE_A_NOJOIN 
+78 : ERC_VOTE_A_OPENED 
+79 : ERC_VOTE_T_NUM 
+80 : ERC_VOTE_T_TMR 
+81 : ERC_VOTE_T_VOTE 
+82 : ERC_VOTE_T_MAC 
+83 : ERC_VOTE_A_CRC 
+84 : ERC_VOTE_T_POINT_SIG 
+85 : ERC_VOTE_T_HASH 
+86 : ERC_VOTE_T_VERIFY 
+87 : ERC_VOTE_A_SAVE_VOTE 
+Ошибка: еще не проголосовано 
+Голос уже был открыт
+90 : ERC_OPEN_A_TYPE 
+91 : ERC_OPEN_A_LEN 
+92 : ERC_OPEN_A_NOVOTE 
+93 : ERC_OPEN_A_OPENED 
+94 : ERC_OPEN_T_NUM 
+95 : ERC_OPEN_T_VOTD 
+96 : ERC_OPEN_A_CRC 
+97 : ERC_OPEN_T_POINT_SIG 
+98 : ERC_OPEN_T_HASH 
+99 : ERC_OPEN_T_VERIFY
+100: ERC_OPEN_A_SAVE_VOTR
+101: ERC_SCAN_SAVE
+Голос изменен!
+Голос не был задан!
+104: ERC_SEND_LEN
+105: ERC_SEND_SRV
+106: ERC_SEND_PRT
+107: ERC_SEND_DNS
+108: ERC_SEND_SOC
+109: ERC_SEND_NGL
+Время ожидания истекло
+111: ERC_READ_LEN_WTCP
+Соединение разорвано сервром
+Установлено прямое соединение с сервером
+114: ERC_READ_TLEN
+Ошибка подключения к Tor
+Используем анонимизатор Tor
+Соединение с Tor разорвано
+118: ERC_READ_LEN_WTOR
+Соединение с сервером закрыто
+120: ERC_READ_TCLOSEA
+Отсылаем запрос на сервер через Tor
+Подключаемся к серверу через Tor
+123: ERC_READ_WTLEN
+Tor не нашел сервер
+125: ERC_READ_ANS_LEN
+126: ERC_READ_ANS_PKT
+127: ERC_SCAN_CRC
+0  : SUCCESS
+1  : ERR_INIR_RNG
+2  : ERR_INIR_DBOPEN
+3  : ERR_INIR_DBTAB
+4  : ERR_INIR_GENX
+5  : ERR_INIR_SAVEX
+6  : ERR_INIR_SAVEXX
+7  : ERR_INIR_GENXX
+8  : ERR_INIR_LOADXX
+9  : ERR_INIR_LENXX 
+10 : ERR_INIR_CHECKXX 
+11 : ERR_INIR_TEST 
+12 : ERR_INIR_LOADYY 
+13 : ERR_INIR_LENYY 
+14 : ERR_INIV_RNG 
+15 : ERR_INIV_DBOPEN 
+16 : ERR_INIV_DBTAB 
+17 : ERR_INIV_GENX 
+18 : ERR_INIV_SAVEX 
+19 : ERR_INIV_SAVEXX 
+20 : ERR_INIV_GENXX 
+21 : ERR_INIV_LOADXX 
+22 : ERR_INIV_LENXX 
+23 : ERR_INIV_CHECKXX 
+24 : ERR_INIV_TEST 
+25 : ERR_INIV_LOADYY 
+26 : ERR_INIV_LENYY 
+27 : ERR_INIV_HASHYY 
+Подключение сейчас невозможно 
+29 : ERR_GETS_LEN 
+30 : ERR_GETS_CRC 
+Идентификация сейчас невозможна 
+32 : ERR_IDNT_LEN 
+33 : ERR_IDNT_CRC 
+34 : ERR_IDNT_DBOPEN 
+35 : ERR_IDNT_DBREAD 
+36 : ERR_IDNT_DBFIND 
+37 : ERR_IDNT_NOPASS 
+38 : ERR_IDNT_POINT 
+39 : ERR_IDNT_SSEC 
+40 : ERR_IDNT_DBSAVESS 
+41 : ERR_IDNT_HASH 
+42 : ERR_IDNT_GETQ 
+Регистрация сейчас невозможна 
+44 : ERR_REGS_LEN 
+45 : ERR_REGS_CRC 
+46 : ERR_REGS_DBOPEN 
+47 : ERR_REGS_DBREAD 
+48 : ERR_REGS_DBFIND 
+49 : ERR_REGS_NOPASS 
+50 : ERR_REGS_NOSSEC 
+51 : ERR_REGS_SSLEN 
+52 : ERR_REGS_MAC 
+53 : ERR_REGS_BADSIG 
+54 : ERR_REGS_POINT 
+55 : ERR_REGS_DBSAVESIG 
+Получение бюллетня сейчас невозможно 
+57 : ERR_JOIN_LEN 
+58 : ERR_JOIN_CRC 
+59 : ERR_JOIN_DBOPEN 
+60 : ERR_JOIN_DBREAD 
+61 : ERR_JOIN_DBFIND 
+62 : ERR_JOIN_POINT 
+63 : ERR_JOIN_HASH 
+64 : ERR_JOIN_VERIFY 
+65 : ERR_JOIN_DBSAVEK 
+Голосование сейчас невозможно 
+67 : ERR_VOTE_LEN 
+68 : ERR_VOTE_CRC 
+69 : ERR_VOTE_DBOPEN 
+70 : ERR_VOTE_DBREAD 
+71 : ERR_VOTE_DBFIND 
+72 : ERR_VOTE_TMRF 
+73 : ERR_VOTE_TMRL 
+74 : ERR_VOTE_KEY 
+75 : ERR_VOTE_PUB 
+76 : ERR_VOTE_HASH 
+77 : ERR_VOTE_SIG 
+78 : ERR_VOTE_VERIFY 
+79 : ERR_VOTE_DBSAVEV 
+80 : ERR_VOTE_DBSAVEM 
+81 : ERR_VOTE_DBSAVET 
+Раскрытие голоса сейчас невозможно 
+83 : ERR_OPEN_LEN 
+84 : ERR_OPEN_CRC 
+85 : ERR_OPEN_DBOPEN 
+86 : ERR_OPEN_DBREAD 
+87 : ERR_OPEN_DBFIND 
+88 : ERR_OPEN_VLEN 
+89 : ERR_OPEN_MLEN 
+90 : ERR_OPEN_MAC 
+91 : ERR_OPEN_DBSAVEV 
+92 : ERR_OPEN_DBSAVET 
+93 : ERR_JOIN_TI_HASH 
+94 : ERR_VOTE_TI_HASH 
+95 : ERR_OPEN_TI_HASH 
+Повторная идентификация 
+Вы уже зарегистрированы
+Вы уже получили ID
+Повторное голосование
+Изменение голоса невозможно
+Вы уже открыли голос
+Инициализация...
+Сканирование...
+Подключение...
+Персональная идентификация...
+Персональная регистрация...
+Получение анонимного ID...
+Выбор голоса...
+Голосование...
+Раскрытие голоса...
+Связь с сервером...
+112: ERR_STAGE_WRONG
+113: ERR_CMD_WRONG
+114: ERR_PKT_WRONG
+115: ERR_SCAN_LOAD
+Ошибка пароля
+Ошибка в адресе сервера
+Ответ сервера принят
+Переходим на следующий этап
+Нет кандидатов в бюлетне
+
+
+
