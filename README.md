@@ -47,4 +47,5 @@ Included Tor is prebuild binary deployed in apk, see:
 https://github.com/guardianproject/tor-android
 
 Developer: Viktoria Malevanchenko, student of NMTU named acad.Yu.Bugai, Ukraine, Poltava, 2020
+
 MaitTo: vika_nmtu@protonmail.com
