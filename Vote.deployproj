@@ -1,0 +1,3280 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup>
+        <DeviceId Condition="'$(Platform)'=='Android'">0123456789ABCDEF</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice32'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mul.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\book.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>book.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\serpent.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>serpent.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\rnd.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>rnd.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\timing.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>timing.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\interf_enc.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>interf_enc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\math_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>math_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice64\Release\Project2.dSYM" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>Project2</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\audio.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>audio.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\crplib\shake.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>shake.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mat_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mat_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\fs_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>fs_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\amr_speech_importance.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>amr_speech_importance.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\curve25519donna.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>curve25519donna.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_58x58.png</RemoteName>
+            <DeployClass>iPhone_Spotlight58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\chacha20.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>chacha20.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\ike.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ike.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\r2p.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>r2p.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\havege.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>havege.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\audio_opsl.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>audio_opsl.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\sp_dec.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sp_dec.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\pke.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>pke.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\fft_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>fft_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\scalarmult.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>scalarmult.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\npp.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>npp.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\dsp_sub.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>dsp_sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\st.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>st.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\trng.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>trng.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mathdp31.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mathdp31.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\crplib\KeccakP800.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>KeccakP800.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\cr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>cr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\copy.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>copy.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\audio_wave.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>audio_wave.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\tr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>tr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\ocb.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ocb.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\to_bytes.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>to_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="user\ui_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ui_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul121665.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mul121665.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\interf_dec.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>interf_dec.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice64\Release\Project2.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\tr_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>tr_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\invert.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>invert.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\aecm.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>aecm.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tor.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>tor.so</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <DeployClass>iPhone_Spotlight29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice64\Release\Project2.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\..\</RemoteDir>
+            <RemoteName>Project2.entitlements</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\cswap.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>cswap.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\cr_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>cr_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice64\Release\ResourceRules.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sub.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\jit.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>jit.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\add.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>add.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\sp_enc.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sp_enc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sqr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sqr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\global.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>global.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\local_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>local_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\from_bytes.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>from_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="user\ui.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ui.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\st_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>st_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice64\Release\Vote" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Vote</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mathhalf.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mathhalf.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(BDS)\bin64\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64250mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cc64250mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64250.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cc64250.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'">
+        <DeployFile Include="transport\tr_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>tr_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\invert.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>invert.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="user\ui_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ui_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\math_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>math_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\book.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>book.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\st.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>st.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sqr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sqr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\trng.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>trng.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\chacha20.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>chacha20.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\ike.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ike.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\jit.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>jit.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\interf_enc.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>interf_enc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice32\Release\Project2.dSYM" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>Project2</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\cswap.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>cswap.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\audio_opsl.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>audio_opsl.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\dsp_sub.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>dsp_sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <DeployClass>iPhone_Spotlight29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\add.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>add.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\fs_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>fs_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\pke.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>pke.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\serpent.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>serpent.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\st_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>st_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\amr_speech_importance.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>amr_speech_importance.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mat_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mat_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice32\Release\Vote" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Vote</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\r2p.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>r2p.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice32\Release\ResourceRules.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\havege.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>havege.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_58x58.png</RemoteName>
+            <DeployClass>iPhone_Spotlight58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\scalarmult.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>scalarmult.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\to_bytes.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>to_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\interf_dec.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>interf_dec.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mathhalf.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mathhalf.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\crplib\shake.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>shake.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tor.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>tor.so</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\aecm.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>aecm.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\audio_wave.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>audio_wave.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\ocb.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ocb.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice32\Release\Project2.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\..\</RemoteDir>
+            <RemoteName>Project2.entitlements</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\curve25519donna.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>curve25519donna.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\timing.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>timing.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\cr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>cr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\crplib\KeccakP800.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>KeccakP800.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mul.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\copy.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>copy.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice32\Release\Project2.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul121665.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mul121665.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\sp_enc.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sp_enc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sub.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\local_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>local_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\audio.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>audio.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\global.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>global.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mathdp31.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>mathdp31.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\from_bytes.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>from_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\rnd.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>rnd.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="user\ui.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>ui.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\npp.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>npp.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\cr_if.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>cr_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\sp_dec.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>sp_dec.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\fft_lib.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>fft_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\tr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>tr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="ecc\copy.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>copy.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="common\geoip" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>geoip</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sqr.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sqr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tcp\tcc.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>tcc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\st.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>st.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="user\ui.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>ui.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\cr.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\havege.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>havege.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\whereami_lin.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>whereami_lin.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\amath.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>amath.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\copy.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>copy.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\from_bytes.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>from_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\ec\ecfp2.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>ecfp2.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\sp_enc.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sp_enc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\stp.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>stp.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\scalarmult.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>scalarmult.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\param.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>param.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Win32\Debug\Vote.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>Vote.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="ecc\from_bytes.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>from_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\serpent.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>serpent.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\pke.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>pke.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\book.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>book.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\dsp_sub.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>dsp_sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Win32\Release\Vote.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>Vote.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\ec\ecfp.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>ecfp.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\res.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>res.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sub.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\amr_speech_importance.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>amr_speech_importance.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\timing.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>timing.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\cswap.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cswap.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mul.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32250.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cc32250.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\client.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>client.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\sp_dec.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sp_dec.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mathdp31.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mathdp31.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_open.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_open.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32250mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cc32250mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\gss\bls.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>bls.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32c250mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cc32c250mt.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32c250.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cc32c250.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\hash\sha1.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sha1.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mathhalf.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mathhalf.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\srv_verb.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>srv_verb.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\bigint\bi.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>bi.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="common\geoip6" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>geoip6</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="quirc\quirc.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>quirc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\to_bytes.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>to_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\hash\hashing.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>hashing.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="common\bridges.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>bridges.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\tr.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>tr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\jit.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>jit.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul121665.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mul121665.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\fp\fp12.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>fp12.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\st_if.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>st_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\base32.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>base32.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\mat_lib.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mat_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\local_if.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>local_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\ike.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>ike.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\cli_verb.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_verb.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\to_bytes.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>to_bytes.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\global.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>global.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_scan.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_scan.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\audio.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>audio.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\bench_util.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>bench_util.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="rnd\trng.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>trng.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\npp.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>npp.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\scalarmult.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>scalarmult.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\interf_enc.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>interf_enc.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="rnd\timing.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>timing.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_join.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_join.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\ec\compress.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>compress.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\myutil.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>myutil.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_gets.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_gets.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul121665.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mul121665.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="shake\shake.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>shake.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="quirc\decode.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>decode.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\chacha20.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>chacha20.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\mul.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>mul.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\rand.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>rand.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\rnd.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>rnd.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\fs_lib.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>fs_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\tr_if.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>tr_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\fp\fp4.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>fp4.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_init.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_init.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sqr.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sqr.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\bigint\bi_const.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>bi_const.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\crplib\shake.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>shake.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\myassert.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>myassert.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\invert.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>invert.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\invert.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>invert.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\cswap.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cswap.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\b64.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>b64.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\fp\fp.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>fp.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_regs.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_regs.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="user\ui_if.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>ui_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\pbc\pbc_bn.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>pbc_bn.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\add.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>add.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\r2p.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>r2p.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\cr_if.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cr_if.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\msg.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>msg.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="quirc\version_db.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>version_db.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\r2p.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>r2p.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\demo\pairing_demo.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>pairing_demo.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\hash\Keccak-compact.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>Keccak-compact.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\dev\audio_wave.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>audio_wave.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\trng.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>trng.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="storage\rndlib\curve25519donna.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>curve25519donna.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_idnt.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_idnt.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="shake\KeccakP800.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>KeccakP800.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tor\libTor.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>libTor.so</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="transport\obflib\ocb.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>ocb.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="pair\src\base\std\fp\fp2.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>fp2.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\math_lib.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>math_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\hlp.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>hlp.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\amr\interf_dec.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>interf_dec.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tools\whereami_win.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>whereami_win.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\add.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>add.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="quirc\identify.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>identify.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_vote.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_vote.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="rnd\havege.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>havege.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cli\cli_ui.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>cli_ui.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="snd\npp\fft_lib.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>fft_lib.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ecc\sub.c" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>sub.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="cryptor\crplib\KeccakP800.c" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>KeccakP800.c</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>Vote.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgstl.dylib" Condition="'$(DynamicRTL)'=='true'">
+            <RemoteDir>Vote.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgstl.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgsqlite3.dylib">
+            <RemoteDir>Vote.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgsqlite3.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgcrtl.dylib" Condition="'$(DynamicRTL)'=='true'">
+            <RemoteDir>Vote.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgcrtl.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="splash\s470_320.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\i48.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Release\libVote.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libVote.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="res\hlp.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\assets\internal\</RemoteDir>
+            <RemoteName>hlp.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Release\classes.dex" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\stp.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\assets\internal\</RemoteDir>
+            <RemoteName>stp.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s470.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\w144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\i36.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\w48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\w96.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libProject2.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Debug\libVote.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libVote.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include=".\Android\Release\splash_image_def.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\library\lib\mips\</RemoteDir>
+            <RemoteName>libProject2.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\w72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\library\lib\mips\</RemoteDir>
+            <RemoteName>libProject2.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\i96.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\i72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s640.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Release\AndroidManifest.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s426_320.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s640_480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s426.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tor\libTor.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libTor.so</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="NotificationService\Android\Debug\libNotificationService.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libNotificationService.so</RemoteName>
+            <DeployClass>AndroidServiceOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\w36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Release\styles.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\res.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\assets\internal\</RemoteDir>
+            <RemoteName>res.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="res\msg.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\assets\internal\</RemoteDir>
+            <RemoteName>msg.txt</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\i144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="tor\libTor.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libTor.so</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libProject2.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\libProxyAndroidService.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Vote\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libProxyAndroidService.so</RemoteName>
+            <DeployClass>AndroidServiceOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="splash\s960_720.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Vote\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+            <RemoteDir>Vote.app\</RemoteDir>
+            <RemoteName>libPCRE.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>
